@@ -1,18 +1,18 @@
 const readline = require("readline");
 
-const rl = readline.createInterface({
+const reader = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
 const numbers = [];
 
-rl.on("line", function (line) {
+reader.on("line", function (line) {
   const a = Number(line);
   numbers.push(a);
 });
 
-rl.on("close", function () {
+reader.on("close", function () {
   console.log(solve(numbers[0], numbers[1]));
 });
 
