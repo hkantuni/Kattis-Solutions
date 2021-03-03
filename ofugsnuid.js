@@ -16,5 +16,6 @@ reader.on("close", () => {
   const ans = nums.reverse();
   for (i = 0; i < ans.length; i++) {
     console.log(ans[i]);
+    // console.log(ans[i]);
   }
 });
